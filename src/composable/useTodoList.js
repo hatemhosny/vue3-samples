@@ -11,7 +11,7 @@ export function useTodoList() {
 
   watchEffect(() => {
     if (shouldFetch.value) {
-      fetch("http://jsonplaceholder.typicode.com/todos")
+      fetch("https://hatemhosny.github.io/vue3-samples/public/todos.json")
         .then(response => response.json())
         .then(json => {
           for (let { id, title } of json) {
