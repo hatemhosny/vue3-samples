@@ -1,7 +1,9 @@
 <template>
-  <button @click="increment">
-    Count is: {{ state.count }}, double is: {{ state.double }}
-  </button>
+  <div class="container">
+    <button @click="increment">
+      Count is: {{ state.count }}, double is: {{ state.double }}
+    </button>
+  </div>
 </template>
 
 <script>
